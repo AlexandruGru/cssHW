@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #828282;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gray-bg {
+  width: 100%;
+  background-color: #fbf8f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: 70%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > img {
+  display: none;
+}
+.header > div > span {
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+}
+.header > ul {
+  padding: 0;
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header > ul > li > img {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 70%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-right-desktop {
+  width: 25rem;
+}
+.main-right-tablet {
+  display: none;
+}
+.main-left {
+  width: 60%;
+}
+.main-left > h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 45px;
+}
+.main-left-links {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-left-links > img {
+  width: 8rem;
+}
+.main-left-links > a {
+  color: #1da1f2;
+}
+.avatars {
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  position: relative;
+}
+.avatar:nth-child(n + 2) {
+  margin-left: -1.8rem;
+}
+.main-left-bottom-text {
+  width: 60%;
+}
+.main-left-bottom-text > span {
+  color: #1da1f2;
+}
+.features {
+  width: 70%;
+}
+.features > h1 {
+  width: 40%;
+  color: black;
+}
+.grid-container {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.grid-card {
+  border: 1px solid #828282;
+  padding: 1rem;
+  border-radius: 2%;
+}
+.grid-card > h3 {
+  color: black;
+}
+.blue-bg {
+  width: 100%;
+  background: #d7f5f5;
+  display: flex;
+  justify-content: center;
+}
+.reviews-container {
+  width: 70%;
+  margin: 2rem 0 4rem 0;
+}
+.reviews-container > h1 {
+  color: black;
+}
+.reviews {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+}
+.review-card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2%;
+  background: white;
+  margin: 1rem 0;
+}
+.review-card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.review-card-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review-card-header > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review-card-name {
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.review-card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review-card-footer > span {
+  display: flex;
+  align-items: center;
+}
+.review-card-footer > span > img {
+  margin: 0 0.5rem 0 0;
+}
+.pricing-container {
+  width: 35%;
+  margin: 2rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-container > h1 {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+.pricing-container > p {
+  margin-top: 0;
+  text-align: center;
+}
+.pricing-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fce5be;
+  border-radius: 0.7rem;
+  background-color: #fbf8f3;
+}
+.pricing-card {
+  margin: 1rem;
+}
+.pricing-card > p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+.amount-of-money {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+}
+.pricing-card-list {
+  list-style-type: none;
+  padding: 0;
+}
+.pricing-card-list > li {
+  margin: 1rem 0 0 0;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 15px;
+}
+.pricing-card-list > li:before {
+  position: absolute;
+  left: 0;
+  content: url("./images/Checkmark.svg");
+}
+.blue-bg {
+  width: 100%;
+  background: #d7f5f5;
+}
+.footer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > span {
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+}
+.footer > ul {
+  padding: 0;
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: black;
+}
+.footer > ul > li > img {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 860px) {
+  .header {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .header > span {
+    color: blue;
+    font-size: 1.5rem;
+  }
+  .header > ul {
+    width: 28rem;
+  }
+  .header > ul > li {
+    font-size: 1.5rem;
+  }
+  .header > ul > li > img {
+    height: 2.5rem;
+  }
+  .main {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+  .main-right {
+    display: flex;
+    justify-content: center;
+  }
+  .main-right-desktop {
+    display: none;
+  }
+  .main-right-tablet {
+    width: 100%;
+    display: block;
+  }
+  .main-left {
+    width: 100%;
+  }
+  .features {
+    width: 90%;
+  }
+  .features > h1 {
+    width: 50%;
+  }
+  .grid-container {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .reviews-container {
+    width: 100%;
+    overflow: auto;
+    margin: 2rem 0 4rem 3rem;
+  }
+  .pricing-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header > ul {
+    display: none;
+  }
+  .header > img {
+    width: 2rem;
+    display: block;
+  }
+  .main-right-desktop {
+    width: 100%;
+    display: block;
+  }
+  .main-right-tablet {
+    display: none;
+  }
+  .main-left-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-left-links > img {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .main-left-bottom-text {
+    width: 100%;
+  }
+  .features > h1 {
+    width: 100%;
+  }
+  .reviews-container {
+    width: 90%;
+  }
+  .reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1rem;
+  }
+  .reviews-container {
+    width: 90%;
+    margin: 0;
+  }
+  .review-card {
+    width: 90%;
+    border-radius: 2%;
+    background: white;
+  }
+  .pricing-container > h1 {
+    text-align: center;
+  }
+  .pricing-container > p {
+    margin-bottom: 2rem;
+  }
+  .footer {
+    width: 90%;
+    display: block;
+    margin-top: 1rem;
+  }
+}
